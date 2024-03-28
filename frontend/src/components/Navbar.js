@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <div>
-      <ul style={{ display: "flex", gap: "10px", listStyle: "none" }}>
+      <ul>
         <li>
           <Link to="/">Home</Link>
         </li>
@@ -15,7 +15,7 @@ const Navbar = () => {
           <Link to="register">Register</Link>
         </li>
         <li>
-          <Link to="single">Signle Blog</Link>
+          <Link to="post/343">Signle Blog</Link>
         </li>
         <li>
           <Link to="write">Write</Link>
