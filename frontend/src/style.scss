@@ -12,6 +12,21 @@ $lightGreen: #b9e7e7;
 
 .app {
   .container {
+    nav {
+      padding-block: 1rem;
+      ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        li {
+          a {
+            text-decoration: none;
+          }
+        }
+      }
+    }
     .auth {
       display: flex;
       flex-direction: column;
@@ -24,6 +39,31 @@ $lightGreen: #b9e7e7;
         color: teal;
         font-size: 3rem;
         margin-bottom: 1.5rem;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: #fff;
+        padding: 1rem;
+        width: 300px;
+
+        input {
+          border: none;
+          border-bottom: 1px solid lightgray;
+          padding: 0.5rem;
+        }
+
+        button {
+          padding: 0.5rem 1rem;
+          background-color: teal;
+          outline: none;
+          border: none;
+          font-size: 1rem;
+          cursor: pointer;
+          color: #fff;
+        }
       }
     }
   }
