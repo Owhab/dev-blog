@@ -21,6 +21,7 @@ const Register = () => {
           placeholder="Confirm Password"
         />
         <button>Register</button>
+        <p className="error">This is an error</p>
         <p>
           Already have an account? <Link to="/login">Login</Link>
         </p>

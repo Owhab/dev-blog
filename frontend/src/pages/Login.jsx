@@ -20,6 +20,7 @@ const Login = () => {
         />
 
         <button>Login</button>
+        <p className="error">This is an error.</p>
         <p>
           Don't have an account? <Link to="/register">Register</Link>
         </p>
