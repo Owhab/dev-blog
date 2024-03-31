@@ -10,6 +10,12 @@ body {
 
 $lightGreen: #b9e7e7;
 
+.container {
+  max-width: 1440px;
+  padding-inline: 20px;
+  margin-inline: auto;
+}
+
 .app {
   .navbar {
     .container {
@@ -87,6 +93,14 @@ $lightGreen: #b9e7e7;
           color: red;
         }
       }
+    }
+  }
+
+  footer {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 }
