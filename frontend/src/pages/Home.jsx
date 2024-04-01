@@ -1,27 +1,27 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import BlogImage from "./../assets/images/blog.avif";
 
 const Home = () => {
   return (
-    <div className="container">
-      <h1>This is Home page</h1>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="login">Login</Link>
-        </li>
-        <li>
-          <Link to="register">Register</Link>
-        </li>
-        <li>
-          <Link to="single">Signle Blog</Link>
-        </li>
-        <li>
-          <Link to="write">Write</Link>
-        </li>
-      </ul>
+    <div className="home">
+      <div className="container">
+        <div className="posts">
+          <div className="post">
+            <div className="image">
+              <img src={BlogImage} alt="Post Title" />
+            </div>
+
+            <div className="content">
+              <Link className="post-link" to="/post/34">
+                <h3>Post title</h3>
+              </Link>
+              <p>Post Short Description</p>
+              <button>Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

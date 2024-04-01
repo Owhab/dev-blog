@@ -17,6 +17,7 @@ $lightGreen: #b9e7e7;
 }
 
 .app {
+  // Navbar Styles Start
   .navbar {
     .container {
       max-width: 1440px;
@@ -47,6 +48,81 @@ $lightGreen: #b9e7e7;
       }
     }
   }
+
+  .home {
+    margin-top: 5rem;
+    .posts {
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+
+      .post {
+        display: flex;
+        align-items: flex-start;
+        gap: 2rem;
+        width: 100%;
+
+        &:nth-child(2n + 1) {
+          flex-direction: row-reverse;
+        }
+
+        .image {
+          flex: 2;
+          position: relative;
+          img {
+            max-width: 100%;
+          }
+          &::after {
+            content: "";
+            background-color: $lightGreen;
+            position: absolute;
+            left: -20px;
+            top: 20px;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+          }
+        }
+
+        .content {
+          flex: 3;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 100%;
+          gap: 1rem;
+
+          .post-link {
+            text-decoration: none;
+            color: #000;
+            display: inline-block;
+            h3 {
+              font-size: 3rem;
+              text-decoration: none;
+            }
+          }
+
+          p {
+            font-size: 2rem;
+          }
+
+          button {
+            width: max-content;
+            padding: 10px 20px;
+            background-color: white;
+            border: 1px solid teal;
+            color: teal;
+            display: inline-block;
+            &:hover {
+              background-color: teal;
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  // Navbar Styles End
   // Register and Login Page
   .auth {
     display: flex;
@@ -95,7 +171,9 @@ $lightGreen: #b9e7e7;
       }
     }
   }
+  // Register and Login Page Styles End
 
+  // Footer Styles Start
   footer {
     .container {
       display: flex;
@@ -103,4 +181,5 @@ $lightGreen: #b9e7e7;
       justify-content: space-between;
     }
   }
+  // Footer Styles End
 }
