@@ -48,7 +48,9 @@ $lightGreen: #b9e7e7;
       }
     }
   }
+  // Navbar Styles End
 
+  // Home Page Styles Start
   .home {
     margin-top: 5rem;
     .posts {
@@ -122,7 +124,50 @@ $lightGreen: #b9e7e7;
       }
     }
   }
-  // Navbar Styles End
+  // Home Page Styles End
+
+  // Post Details Page Styles Start
+  .single {
+    .post-details {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      .content {
+        flex: 5;
+
+        img {
+          max-width: 100%;
+        }
+
+        .user {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          gap: 1rem;
+          padding-block: 1rem;
+          img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 50%;
+          }
+          .info {
+            span {
+              font-size: 18px;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .menu {
+        flex: 2;
+        position: sticky;
+        top: 0;
+      }
+    }
+  }
+  // Post Details Page Styles End
+
   // Register and Login Page
   .auth {
     display: flex;
