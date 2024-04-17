@@ -132,11 +132,15 @@ $lightGreen: #b9e7e7;
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
+      gap: 1rem;
       .content {
         flex: 5;
 
         img {
           max-width: 100%;
+          width: 100%;
+          height: 300px;
+          object-fit: cover;
         }
 
         .user {
@@ -157,12 +161,42 @@ $lightGreen: #b9e7e7;
               font-weight: bold;
             }
           }
+          .edit {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            a {
+              display: inline-block;
+              font-size: 28px;
+            }
+          }
+        }
+        h1 {
+          font-size: 2.5rem;
+          color: #333;
+        }
+        p {
+          text-align: justify;
+          line-height: 2rem;
         }
       }
       .menu {
         flex: 2;
-        position: sticky;
-        top: 0;
+        gap: 25px;
+        display: flex;
+        flex-direction: column;
+        .post {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+
+          img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+          }
+        }
       }
     }
   }
